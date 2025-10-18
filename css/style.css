@@ -1,0 +1,12 @@
+.navbar {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    top: 0px;
+    background-blend-mode: darken;
+    background-size: cover;
+    padding: 10px 20px;
+    border-bottom: 1px solid black;
+}
+
