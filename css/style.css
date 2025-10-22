@@ -1,13 +1,33 @@
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  background: #0d1117;
-  color: #c9d1d9;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+:root {
+  /* Dark theme (default) */
+  --bg-color: #0d1117;
+  --text-color: #c9d1d9;
+  --accent-color: #58a6ff;
+  --border-color: #21262d;
+  --muted-color: #8b949e;
+  --card-bg: #161b22;
+}
+
+[data-theme="light"] {
+  /* Light theme */
+  --bg-color: #f6f8fa;
+  --text-color: #24292f;
+  --accent-color: #0969da;
+  --border-color: #d0d7de;
+  --muted-color: #57606a;
+  --card-bg: #ffffff;
 }
 
 .site-header {
-  border-bottom: 1px solid #21262d;
-  background: #0d1117;
+  border-bottom: 1px solid var(--border-color);
+  background: var(--bg-color);
   position: sticky;
   top: 0;
 }
@@ -29,19 +49,19 @@ body {
 
 .nav-left a {
   text-decoration: none;
-  color: #c9d1d9;
+  color: var(--text-color);
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
 .nav-left a:hover {
-  color: #58a6ff;
+  color: var(--accent-color);
 }
 
 #theme-toggle {
   background: none;
   border: none;
-  color: #c9d1d9;
+  color: var(--text-color);
   font-size: 1.4rem;
   cursor: pointer;
   transition: transform 0.2s ease;
@@ -75,7 +95,7 @@ body {
 
 .hero p {
   font-size: clamp(1rem, 2vw, 1.2rem);
-  color: #8b949e;
+  color: var(--muted-color);
   line-height: 1.6;
   max-width: 500px;
 }
@@ -87,13 +107,13 @@ body {
   width: 100%;
   max-width: 220px;
   height: auto;
-  border: 3px solid #21262d;
+  border: 3px solid var(--border-color);
   object-fit: cover;
 }
 
 .site-footer {
-  border-top: 1px solid #21262d;
-  background: #0d1117;
+  border-top: 1px solid var(--border-color);
+  background: var(--bg-color);
   text-align: center;
 }
 
@@ -112,10 +132,10 @@ body {
 }
 
 .social-links a {
-  background-color: #21262d;
+  background-color: var(--bg-color);
   border-radius: 10%;
   padding: 7px;
-  color: #c9d1d9;
+  color: var(--text-color);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
@@ -127,7 +147,7 @@ body {
 }
 
 .footer-text {
-  color: #8b949e;
+  color: var(--muted-color);
   font-size: 0.9rem;
   margin-top: 1rem;
 }

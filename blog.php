@@ -1,9 +1,6 @@
 <?php include "partials/header.php"; ?>
 
-
-<?php include "partials/hero.php"; ?>
-<?php include "partials/social.php"; ?>
-
+<h1 style="text-align: center;"> UNDER CONSTRUCTION.. </h1>
 
 <?php include "partials/footer.php"; ?>
 
