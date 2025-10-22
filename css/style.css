@@ -6,7 +6,6 @@ body {
 }
 
 :root {
-  /* Dark theme (default) */
   --bg-color: #0d1117;
   --text-color: #c9d1d9;
   --accent-color: #58a6ff;
@@ -16,7 +15,6 @@ body {
 }
 
 [data-theme="light"] {
-  /* Light theme */
   --bg-color: #f6f8fa;
   --text-color: #24292f;
   --accent-color: #0969da;
@@ -56,6 +54,12 @@ body {
 
 .nav-left a:hover {
   color: var(--accent-color);
+}
+
+.site-logo {
+  height: clamp(28px, 5vw, 50px);
+  width: auto;
+  display: block;
 }
 
 #theme-toggle {

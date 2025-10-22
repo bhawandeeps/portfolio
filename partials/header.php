@@ -10,6 +10,7 @@
 
         <header class="site-header">
             <div class="container header-inner">
+                    <a href="/index.php"><img src="img/icon.jpg" alt="icon" class="site-logo"> </a>
                 <nav class="nav-left">
                     <a href="/projects.php">Projects</a>
                     <a href="/blog.php">Blog</a>
