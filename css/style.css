@@ -55,7 +55,7 @@ body {
   display: flex;
   text-align: center;
   justify-content: space-between; 
-  padding: 20px 0px;
+  padding: 50px 0px;
   width: 90vw;
   height: 100%;
   margin: 0 auto;
@@ -90,25 +90,30 @@ body {
 }
 
 
-/* ===== Footer ===== */
 .site-footer {
   border-top: 1px solid #21262d;
   background: #0d1117;
-  padding: 3rem 1rem;
   text-align: center;
 }
 
-.social-links {
+.socials {
+    padding: 50px;
+}
+
+.social-links {  
   list-style: none;
   padding: 0;
   margin: 0 0 1rem 0;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;  /* ✅ wraps links on small screens */
+  flex-wrap: wrap;  
   gap: 1.5rem;
 }
 
 .social-links a {
+  background-color: #21262d;
+  border-radius: 10%;
+  padding: 7px;
   color: #c9d1d9;
   text-decoration: none;
   font-weight: 500;
@@ -116,7 +121,8 @@ body {
 }
 
 .social-links a:hover {
-  color: #58a6ff;
+  font-weight: 550;
+  padding: 8px;
 }
 
 .footer-text {
@@ -125,7 +131,6 @@ body {
   margin-top: 1rem;
 }
 
-/* ===== Responsive Footer ===== */
 @media (max-width: 600px) {
   .social-links {
     gap: 1rem;
