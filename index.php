@@ -7,15 +7,7 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header class="site-header">
-            <div class="container header-inner">
-                <nav class="nav-left">
-                    <a href="/projects">Projects</a>
-                    <a href="/blog">Blog</a>
-                </nav>
-                <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
-            </div>
-        </header>
+        <?php include "partials/header.php"; ?>
 
         <section class="hero">
             <div class="left-hero"> 
@@ -36,10 +28,8 @@
             </ul>
         </div>
 
+        <?php include "partials/footer.php"; ?>
 
-            <footer class="site-footer">
-                <p class="footer-text">© 2025 Bhawandeep Singh. All rights reserved.</p>
-        </footer>
     </body>
 </html>
 
