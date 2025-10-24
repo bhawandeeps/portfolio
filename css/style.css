@@ -42,7 +42,7 @@ body {
 
 .nav-left {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.5rm;
 }
 
 .nav-left a {
@@ -60,6 +60,12 @@ body {
   height: clamp(28px, 5vw, 50px);
   width: auto;
   display: block;
+}
+
+#home-icon {
+  background: none;
+  color: var(--text-color);
+  font-size: 1.4rem;
 }
 
 #theme-toggle {
